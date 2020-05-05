@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal  instead of cropped to a circle
+% \documentclass[10pt,a4paper,normal]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Achour BERRAHMA}
+\tagline{}
+\tagline{Â la recherche d'un CDI, à partir de septembre 2020}
+%Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:achour.jpg, CC-BY 2.0
+
+\photo{5 cm}{img2}
+\personalinfo{.% \printinfo{symbol}{detail}
+
+  \email{berrahmaachour@gmail.com}
+ \phone{+33 764 21 23 62}
+  \mailaddress{120 Avenue Roger Salengro, 92370 }
+  \location{Chaville , France} 
+  \linkedin{Achour Berrahma}
+  \github{https://github.com/achour94}
+ \textbf{Permis B} 
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Expériences}
+\cvevent{Stagiaire Concepteur développeur}{ Orange}{Fév 2020- aout 2020}{Arcueil, Val-de-Marne}
+\begin{itemize}
+\item Mission : Conception, réalisation et intégration de dispositifs multimédia pour différents supports : web, mobile
+\item Activités :\\
+- Participation à des projets d’envergures et à fort enjeux, innovants et ce épaulé par des spécialistes du domaine
+- Concéption et développement full stack des applications internes sur les deux supports web et mobile.\\
+-Conception et Creation des bases de données.\\
+-Envirenement :PHP, JavaScript, Bootstrap 4, ReactJs, ReactNative, Mysql, SQL, PHPUnit
+
+\end{itemize}
+
+\divider
+
+\cvevent{Ingénieur logiciel}{ Entreprise privé d’intégration de solutions informatiques (ADEX)}{Nov 2018- aout 2019}{Alger, Algérie}
+\begin{itemize}
+\item Missions :\\
+-Support et maintenance d'un systéme Core Banking du client Trésor public\\
+-Déploiement d'une solution VoIP\\
+\item Activités :\\
+-Déploiement du système Core Banking\\
+-Tests d'integreation \\
+-Corrections des anomalies et des bugs \\
+-Environement: Java, JUnits, Maven, Jenkings, Oracle, SQL, RedHat, Cisco.  
+\end{itemize}
+
+\divider
+
+\cvevent{Stagiaire en developpement web}{ Entreprise Nationale des industries de l'électroménagers (ENIEM)}{08 Avril 2018 -- 07 Juillet 2018}{Tizi-Ouzou, Algérie}
+\begin{itemize}
+\item Mission : Conception et réalisation d'une application JAVA EE cas : gestion du centre de médecine de travail.  \\
+\item Activités :\\
+-Analyse: et étude des besoins.\\
+-réalisation d’un modéle relationnel et création d’une base de
+données(MySQL).\\
+- Développement d’une application web pour la gestion des dossiers
+médicaux.\\
+-Environement: JAVA, Spring, Maven,Git,Javascript,JSF, HIBERNATE, BOOTSTRAP, JQUERY.
+
+\end{itemize}
+
+\divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{Formations}
+%\cvevent{Master 2\ Systèmes Embarqués}{Université Paris 8}{En cours}{Paris}
+
+%\cvevent{Master 2\ Systèmes Informatiques}{Université Mouloud Mammeri}{Sept 2018}{Tizi-Ouzou}
+
+%\cvevent{Maintenance informatique et Reseaux}{Ecole Technique}{1 Oct 2013 - 30 Déc 2013}{Tizi-Ouzou}
+%\cvevent{Conception et réalisation d'un site web professionnel}{Ecole Technique}{6 Oct 2013 - 31 Déc 2013}{Tizi-Ouzou}
+%\cvevent{Baccalauréat Sciences Expérimentales}{Direction de l'education}{Juin 2012}{Tizi-Ouzou}
+
+%\cvsection{CENTRES D’INTERETS }
+%Lecture ,  Voyages, Sport (Football, Karaté), Nouvelles Technologies (Documentaires scientifiques).
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+
+
+
+
+\end{document}
